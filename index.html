@@ -1,20 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Payal's Portfolio</title>
-</head>
-<body>
-    <h1>Payal Narwal's Portfolio</h1>
+    <style>
+      * {
+        align-content: center;
+      }
+      h2 {
+        color: darkorange;
+        text-align: center;
+      }
+      .heading h1 {
+        color: rgb(62, 134, 185);
+        background-color: aquamarine;
+        text-align: center;
+      }
+      .container {
+        display: inline-block;
+        margin-left: 20%;
+      }
+      .projects {
+        display: inline-block;
+        height: 160px;
+        width: 220px;
+        background-color: rgb(207, 245, 245);
+        padding: 5px 10px 25px 25px;
+        margin-left: 10%;
+        margin: 10px;
+        border: 2px solid rgb(225, 255, 0);
+        border-radius: 20px;
+      }
+      img {
+        height: 100px;
+        width: 180px;
+        border: 1px solid gold;
+        border-radius: 10px;
+      }
+      .footer {
+        text-align: center;
+        color: darkmagenta;
+        font-size: small;
+      }
+      .container a {
+        color: rgb(244, 126, 203);
+      }
+      .container a:hover {
+        color: rgb(173, 106, 232);
+      }
+      li {
+        color: blueviolet;
+      }
+      body {
+        background-color: rgb(249, 245, 225);
+      }
+      .footer a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+      }
+      .footer a:hover {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Payal Narwal's Portfolio</h1>
+    </div>
     <h2>I am a web developer 💕😍</h2>
-    <hr>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/movies.png" width="200" alt="Movie Ranking Project Preview">
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/birthday.png" width="200" alt="Birthday Invite Project Preview">
-    <hr>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html"> Contact Me</a>
-
-</body>
+    <hr />
+    <div class="container">
+      <ol>
+        <div class="line1">
+          <div class="projects" id="project1">
+            <li>
+              <h3>
+                <a href="./public/movie-ranking.html">Movie Ranking Project</a>
+              </h3>
+              <img
+                src="./assets/images/movies.png"
+                alt="Movie Ranking Project Preview"
+              />
+            </li>
+          </div>
+          <div class="projects" id="project2">
+            <li>
+              <h3>
+                <a href="./public/birthday-invite.html"
+                  >Birthday Invite Project</a
+                >
+              </h3>
+              <img
+                src="./assets/images/birthday.png"
+                alt="Birthday Invite Project Preview"
+              />
+            </li>
+          </div>
+        </div>
+        <div class="line2">
+          <div class="projects" id="project3">
+            <li>
+              <h3>
+                <a href="./public/css_methods.html">Methods of adding CSS</a>
+              </h3>
+              <img
+                src="./assets/images/adding_css.png"
+                alt="Methods of adding CSS Preview"
+              />
+            </li>
+          </div>
+          <div class="projects" id="project4">
+            <li>
+              <h3>
+                <a href="./public/motivational_poster.html"
+                  >Motivational poster project</a
+                >
+              </h3>
+              <img
+                src="./assets/images/motivational_poster.png"
+                alt="Motivational poster project Preview"
+              />
+            </li>
+          </div>
+        </div>
+      </ol>
+    </div>
+    <hr />
+    <div class="footer">
+      <a href="./public/about.html">About Me</a>
+      <a href="./public/contact.html"> Contact Me</a>
+    </div>
+  </body>
 </html>
